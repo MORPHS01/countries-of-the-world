@@ -13,7 +13,7 @@ function Body(props) {
     function searchTextChange(e){
         const searchText = e.target.value
         const newFilter = data.filter((d) => {
-            return d.name.toLowerCase().includes(searchText.toLowerCase())
+            return d.name.toLowerCase().includes(searchText.trim().toLowerCase())
         })
         setSearchArray(newFilter)
     }

@@ -300,10 +300,12 @@ h6{
 
   article{
     gap: 40px 8%;
+    display: flex;
+    justify-content: space-around;
   }
   
   .countryCard{
-    width: 100%;
+    width: 75%;
     &:hover{
       transform: none;
     }
